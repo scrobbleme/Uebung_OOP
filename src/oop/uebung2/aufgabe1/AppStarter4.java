@@ -1,4 +1,4 @@
-package de.badresden.oop.uebung2.aufgabe1;
+package oop.uebung2.aufgabe1;
 
 public class AppStarter4 {
 

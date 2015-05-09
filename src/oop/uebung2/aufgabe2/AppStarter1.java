@@ -1,4 +1,4 @@
-package de.badresden.oop.uebung2.aufgabe2;
+package oop.uebung2.aufgabe2;
 
 /**
  * Wo ist der Fehler?

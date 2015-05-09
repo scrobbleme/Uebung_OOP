@@ -1,4 +1,4 @@
-package de.badresden.oop.uebung2.aufgabe3.java8;
+package oop.uebung2.aufgabe3.java8;
 
 import java.util.function.BinaryOperator;
 

@@ -1,4 +1,4 @@
-package de.badresden.oop.uebung1;
+package oop.uebung1;
 
 import org.apache.commons.lang3.StringUtils;
 
