@@ -12,9 +12,9 @@ public class AppStarter1 {
 			MathOperations operation = 
 				MathOperations.valueOf(args[0].toUpperCase());
 			System.out.println("Das Ergebnis ist " + 
-				operation.calculate(args));
+				operation.rechne(args));
 		} catch (IllegalArgumentException e) {
-			System.out.println("Bitte eine gültige Rechenart angeben");
+			System.out.println("Bitte eine gÃ¼ltige Rechenart angeben");
 		} catch (ParameterNotANumberException e) {
 			System.out.println("Der Parameter " + e.getIndex() + " ist keine Zahl.");
 		} catch (RuntimeException e) {
