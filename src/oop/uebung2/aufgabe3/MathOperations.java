@@ -29,7 +29,7 @@ public enum MathOperations {
 
 	};
 
-	public float calculate(String... args) throws ParameterNotANumberException {
+	public float rechne(String... args) throws ParameterNotANumberException {
 		int i = 1;
 		try {
 			float result = Float.parseFloat(args[i++]);
