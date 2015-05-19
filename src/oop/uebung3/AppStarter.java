@@ -1,11 +1,11 @@
-package oop.uebung2.aufgabe4;
+package oop.uebung3;
 
 import java.util.Map;
 import java.util.TreeMap;
 
-import oop.uebung2.aufgabe4.apps.App;
+import oop.uebung3.apps.App;
 
-public class AppStarter1 {
+public class AppStarter {
 
 	private static final Map<String, App> APPS = new TreeMap<>();
 

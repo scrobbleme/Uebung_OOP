@@ -1,5 +1,9 @@
-package oop.uebung2.aufgabe4.apps;
+package oop.uebung3.apps;
 
+/**
+ * Ein abstrakte Implementierung der App, welche bereits einige Vereinfachungen
+ * vornimmt.
+ */
 public abstract class AbstractApp implements App {
 
 	private final String description;
