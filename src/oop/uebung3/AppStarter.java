@@ -11,6 +11,8 @@ import oop.uebung3.apps.Help8App;
 import oop.uebung3.apps.HelpApp;
 import oop.uebung3.apps.MathApp;
 import oop.uebung3.apps.ui.UIApp;
+import oop.uebung4.aufgabe1.CurrencyConverterApp;
+import oop.uebung4.aufgabe2_jackson.ListCurrenciesApp;
 
 public class AppStarter {
 
@@ -28,6 +30,10 @@ public class AppStarter {
 		registerApp(new AppApp(APPS));
 		registerApp(new ExitApp());
 		registerApp(new UIApp(APPS));
+
+		// Apps aus Übung 4
+		registerApp(new CurrencyConverterApp());
+		registerApp(new ListCurrenciesApp());
 	}
 
 	public static void main(String... args) {
