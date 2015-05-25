@@ -16,7 +16,7 @@ public class HelpApp extends AbstractApp {
 		System.out.println("Bitte wähle eine der verfügbaren Apps aus:\n" + "=====================================\n");
 
 		for (App app : apps.values()) {
-			System.out.println(app.getName() + ":\t " + app.getDescription());
+			System.out.println(app.getName() + ":\t\t " + app.getDescription());
 		}
 	}
 }

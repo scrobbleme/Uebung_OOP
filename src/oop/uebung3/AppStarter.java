@@ -1,6 +1,7 @@
 package oop.uebung3;
 
 import java.util.Map;
+import java.util.Scanner;
 import java.util.TreeMap;
 
 import oop.uebung2.aufgabe3.MathOperations;
@@ -10,6 +11,7 @@ import oop.uebung3.apps.ExitApp;
 import oop.uebung3.apps.Help8App;
 import oop.uebung3.apps.HelpApp;
 import oop.uebung3.apps.MathApp;
+import oop.uebung3.apps.ProvokeScannerExceptionApp;
 import oop.uebung3.apps.ui.UIApp;
 import oop.uebung4.aufgabe1.CurrencyConverterApp;
 import oop.uebung4.aufgabe2_jackson.ListCurrenciesApp;
@@ -17,7 +19,8 @@ import oop.uebung4.aufgabe3_caching.CachingCurrencyConverterApp;
 
 public class AppStarter {
 
-	private static final Map<String, App> APPS = new TreeMap<>();
+	private final static Map<String, App> APPS = new TreeMap<>();
+	public final static Scanner SCANNER = new Scanner(System.in);
 
 	static {
 		// Registriere eine Matheapp für jede Operation
@@ -36,6 +39,9 @@ public class AppStarter {
 		registerApp(new CurrencyConverterApp());
 		registerApp(new ListCurrenciesApp());
 		registerApp(new CachingCurrencyConverterApp());
+	
+		// Sonstiges 
+		registerApp(new ProvokeScannerExceptionApp());
 	}
 
 	public static void main(String... args) {
@@ -54,5 +60,11 @@ public class AppStarter {
 
 	public static void registerApp(App app) {
 		APPS.put(app.getName(), app);
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+		super.finalize();
+		SCANNER.close();
 	}
 }
