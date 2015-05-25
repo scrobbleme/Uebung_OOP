@@ -21,6 +21,6 @@ public interface App {
 	 * @param args
 	 *            Alle Parameter der Kommandozeile.
 	 */
-	public void process(String[] args);
+	public void process(String... args);
 
 }

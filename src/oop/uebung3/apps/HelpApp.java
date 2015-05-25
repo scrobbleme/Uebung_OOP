@@ -2,19 +2,21 @@ package oop.uebung3.apps;
 
 import java.util.Map;
 
-/**
- * Diese App listet alle verfügbaren Apps und deren Beschreibung auf.
- *
- */
 public class HelpApp extends AbstractApp {
+
+	private Map<String, App> apps;
 
 	public HelpApp(Map<String, App> apps) {
 		super("help", "Zeigt diese Hilfe.");
-		// TODO Apps merken
+		this.apps = apps;
 	}
 
 	@Override
-	public void process(String[] args) {
-		// TODO Gib die Hilfe aus
+	public void process(String... args) {
+		System.out.println("Bitte wähle eine der verfügbaren Apps aus:\n" + "=====================================\n");
+
+		for (App app : apps.values()) {
+			System.out.println(app.getName() + ":\t " + app.getDescription());
+		}
 	}
 }
