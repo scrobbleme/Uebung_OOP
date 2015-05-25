@@ -13,6 +13,7 @@ import oop.uebung3.apps.MathApp;
 import oop.uebung3.apps.ui.UIApp;
 import oop.uebung4.aufgabe1.CurrencyConverterApp;
 import oop.uebung4.aufgabe2_jackson.ListCurrenciesApp;
+import oop.uebung4.aufgabe3_caching.CachingCurrencyConverterApp;
 
 public class AppStarter {
 
@@ -34,6 +35,7 @@ public class AppStarter {
 		// Apps aus Übung 4
 		registerApp(new CurrencyConverterApp());
 		registerApp(new ListCurrenciesApp());
+		registerApp(new CachingCurrencyConverterApp());
 	}
 
 	public static void main(String... args) {

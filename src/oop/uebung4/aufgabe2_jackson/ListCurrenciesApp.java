@@ -5,12 +5,11 @@ import java.net.URL;
 import java.util.Map;
 import java.util.TreeMap;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import oop.uebung3.apps.AbstractApp;
 import oop.uebung4.aufgabe2_jackson.model.CurrenciesApiResult;
 import oop.uebung4.aufgabe2_jackson.model.Currency;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * Diese App listet alle verfügbaren Währung auf.
@@ -29,6 +28,8 @@ public class ListCurrenciesApp extends AbstractApp {
 		// http://www.freecurrencyconverterapi.com/api/v3/currencies
 		ObjectMapper objectMapper = new ObjectMapper();
 		try {
+			// Lasse die Jackson-Bibliothek den JSON-String in eine
+			// Objektstruktur umwandeln.
 			CurrenciesApiResult apiResult = objectMapper.readValue(new URL(
 			        "http://www.freecurrencyconverterapi.com/api/v3/currencies"), CurrenciesApiResult.class);
 
