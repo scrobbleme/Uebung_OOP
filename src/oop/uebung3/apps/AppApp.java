@@ -1,7 +1,6 @@
 package oop.uebung3.apps;
 
 import java.util.Map;
-import java.util.Scanner;
 
 import oop.uebung3.AppStarter;
 

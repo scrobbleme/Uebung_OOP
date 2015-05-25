@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Scanner;
 
+import oop.uebung3.AppStarter;
 import oop.uebung3.apps.AbstractApp;
 
 /**
@@ -27,14 +28,12 @@ public class CurrencyConverterApp extends AbstractApp {
 		// a. Ausgangswährung
 		// b. Zielwährung
 		// c. Betrag der konvertiert werden soll (ganze Zahl)
-		try (Scanner scanner = new Scanner(System.in)) {
-			System.out.print("Ausgangswährung: ");
-			sourceCurrency = scanner.nextLine().toUpperCase();
-			System.out.print("Zielwährung: ");
-			targetCurrency = scanner.nextLine().toUpperCase();
-			System.out.print("Betrag: ");
-			betrag = scanner.nextInt();
-		}
+		System.out.print("Ausgangswährung: ");
+		sourceCurrency = AppStarter.SCANNER.nextLine().toUpperCase();
+		System.out.print("Zielwährung: ");
+		targetCurrency = AppStarter.SCANNER.nextLine().toUpperCase();
+		System.out.print("Betrag: ");
+		betrag = AppStarter.SCANNER.nextInt();
 
 		// 2. Lade den aktuellen Wechselkurs runter, z.B.
 		String url = "http://www.freecurrencyconverterapi.com/api/v3/convert?compact=y&q=" + sourceCurrency + "_"
