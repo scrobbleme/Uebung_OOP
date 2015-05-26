@@ -16,6 +16,7 @@ import oop.uebung3.apps.ui.UIApp;
 import oop.uebung4.aufgabe1.CurrencyConverterApp;
 import oop.uebung4.aufgabe2_jackson.ListCurrenciesApp;
 import oop.uebung4.aufgabe3_caching.CachingCurrencyConverterApp;
+import oop.uebung4.aufgabe4_ui.CurrencyConvertUIApp;
 
 public class AppStarter {
 
@@ -39,6 +40,7 @@ public class AppStarter {
 		registerApp(new CurrencyConverterApp());
 		registerApp(new ListCurrenciesApp());
 		registerApp(new CachingCurrencyConverterApp());
+		registerApp(new CurrencyConvertUIApp());
 	
 		// Sonstiges 
 		registerApp(new ProvokeScannerExceptionApp());
