@@ -16,6 +16,7 @@ import oop.uebung3.apps.ui.UIApp;
 import oop.uebung4.aufgabe1.CurrencyConverterApp;
 import oop.uebung4.aufgabe2_jackson.ListCurrenciesApp;
 import oop.uebung4.aufgabe3_caching.CachingCurrencyConverterApp;
+import oop.uebung4.aufgabe4_ui.CurrencyConvertUIApp;
 
 public class AppStarter {
 
@@ -23,6 +24,9 @@ public class AppStarter {
 	public final static Scanner SCANNER = new Scanner(System.in);
 
 	static {
+		System.setProperty("http.proxyHost", "192.168.2.4");
+		System.setProperty("http.proxyPort", "3128");
+		
 		// Registriere eine Matheapp für jede Operation
 		for (MathOperations operation : MathOperations.values()) {
 			registerApp(new MathApp(operation));
@@ -39,6 +43,7 @@ public class AppStarter {
 		registerApp(new CurrencyConverterApp());
 		registerApp(new ListCurrenciesApp());
 		registerApp(new CachingCurrencyConverterApp());
+		registerApp(new CurrencyConvertUIApp());
 	
 		// Sonstiges 
 		registerApp(new ProvokeScannerExceptionApp());
