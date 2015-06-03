@@ -24,6 +24,9 @@ public class AppStarter {
 	public final static Scanner SCANNER = new Scanner(System.in);
 
 	static {
+		System.setProperty("http.proxyHost", "192.168.2.4");
+		System.setProperty("http.proxyPort", "3128");
+		
 		// Registriere eine Matheapp für jede Operation
 		for (MathOperations operation : MathOperations.values()) {
 			registerApp(new MathApp(operation));

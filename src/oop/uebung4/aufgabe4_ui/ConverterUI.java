@@ -75,6 +75,7 @@ public class ConverterUI extends JFrame {
 			public void run() {
 				try {
 					ConverterUI frame = new ConverterUI();
+					frame.pack();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
