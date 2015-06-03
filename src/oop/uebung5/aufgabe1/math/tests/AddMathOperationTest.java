@@ -1,4 +1,4 @@
-package oop.uebung2.aufgabe4.math.tests;
+package oop.uebung5.aufgabe1.math.tests;
 
 import oop.uebung2.aufgabe3.ParameterNotANumberException;
 import oop.uebung2.aufgabe4.math.AddMathOperation;
