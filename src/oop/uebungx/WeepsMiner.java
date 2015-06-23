@@ -1,9 +1,10 @@
 package oop.uebungx;
 
-import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Event;
 import java.awt.EventQueue;
+import java.awt.GridLayout;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 import javax.swing.JButton;
 import javax.swing.JDialog;
@@ -11,12 +12,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-
-import java.awt.GridBagLayout;
-import java.awt.GridLayout;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 
 public class WeepsMiner extends JFrame {
 
